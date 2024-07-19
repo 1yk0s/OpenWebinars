@@ -1,0 +1,30 @@
+//################################################################################
+// Realiza un algoritmo que calcule la potencia, para ello pide por teclado 
+//la base y el exponente. Pueden ocurrir tres cosas:
+// * El exponente sea positivo, sólo tienes que imprimir la potencia.
+// * El exponente sea 0, el resultado es 1.
+// * El exponente sea negativo, el resultado es 1/potencia con el exponente positivo.
+//################################################################################
+//Análisis
+//
+//
+//################################################################################
+//Diseño
+//1. 
+//
+//################################################################################
+
+Proceso Ejercicio7
+	Definir base, exponente Como Real;
+	Escribir Sin Saltar "Introduce la base";
+	Leer base;
+	Escribir Sin Saltar "Introduce el exponente";
+	Leer exponente;
+	Si exponente >= 0 Entonces
+		Escribir "La potencia es: ", (base^exponente);
+	SiNo
+		Si exponente < 0 Entonces
+			Escribir "El resultado es 1 / ", (base^exponente)^(-1);
+		FinSi
+	FinSi
+FinProceso
